@@ -277,18 +277,19 @@ gulp.task('package', gulp.series(() =>
             './dist/**',
             './lib/**',
             './images/**',
-            './plugin/**',
-            './**.md'
+            './plugin/**'
         ],
         { base: './' }
     )
-    .pipe(zip('reveal-js-presentation.zip')).pipe(gulp.dest('./'))
+//    .pipe(gulp.dest('./gh-pages'))
+ .pipe(zip('reveal-js-presentation.zip')).pipe(gulp.dest('./gh-pages'))
 
 ))
 
 gulp.task('reload', () => gulp.src(['*.html', '*.md'])
     .pipe(connect.reload()));
 
+    
 gulp.task('serve', () => {
 
     connect.server({
@@ -302,7 +303,10 @@ gulp.task('serve', () => {
 
     gulp.watch(['js/**'], gulp.series('js', 'reload', 'eslint'))
 
-    gulp.watch(['plugin/**/plugin.js', 'plugin/**/*.html'], gulp.series('plugins', 'reload'))
+    gulp.watch([
+        'plugin/**/plugin.js', 
+        'plugin/**/*.html'
+    ], gulp.series('plugins', 'reload'))
 
     gulp.watch([
         'css/theme/source/*.{sass,scss}',

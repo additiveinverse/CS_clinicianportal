@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			:root {
+				--b-primary: #5B7E95;
+				--b-primary-dark: #415365;
+				--b-secondary: #5B7E95;
+				--b-accent: #FFC629;
+
+				--r-heading-color: var(var(--b-primary));
+			} 
+				
+			.b1 {
+				color: var(--r-heading-color)!important;
+			}
+
+			.b2 {
+				color: var(--b-primary)!important;
+			}
+
+			.b3 {
+				color: var(--b-accent-color)!important;
+			}
+
+
+			@media screen and ( min-width: 768px ) {
+			.row {
+					display: flex;
+				}
+			}
+
+			.col {
+				min-width: 50%;
+				flex: 0 0 50%;
+				margin-left: 1rem;
+				margin-right: 1rem;
+			}
+
+			.mb-0 {
+				margin-bottom: 0!important;
+			}
+
+			.align-left {
+				text-align: left!important;
+			}
+
+			.align-right {
+				text-align: right!important;
+			}
+
+
+			</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background-color="var(--b-primary-dark)" data-background="./app/login__2022.jpg" data-background-opacity="0.15">
+					<!-- <img class="" width="500" data-src="./app/Logo.svg" /> -->
+					<h1>Clinician Portal</h1>
+					<h2 class="h3">Patient page redesign</h2>
+				</section>
+
+				<section data-markdown data-background-color="var(--b-primary-dark)" data-background-opacity="0.2">
+					<textarea data-template>
+
+					<div class="row justify-between">
+					<div class="col">
+						[project workflow diagram?]
+					</div>
+					<div class="col align-left">
+						
+					<h1 class="r-fit-text">Objectives</h1>
+
+					- **Increase overall usability** and provide new and additional feature fuctions that increase engagement with the resources
+					- **Increase revenue** by adding a deeper integration and upsell of consults
+					- **Integrate new product features** with an enhanced report card to reflect report status
+
+					</div>
+					</div>
+
+					</textarea>
+				</section>
+				
+				<section data-markdown data-background-color="goldenrod">
+					<textarea data-template>
+						
+						<div class="row">
+						<div class="col align-left">
+							
+						<h1 class="r-fit-text">My Role</h1>
+						
+						1. **Conducted product discovery**, subject matter expert interviews, and user interviews to understand the personas, tasks, and workflows 
+						1. **Created prototypes and wireframes** with the help of subject matter experts
+						1. **Presented and gained design consensus** from stakeholders through mid-sprint reviews 
+						1. **Created design mockups** using design system for desktop, tablet, and mobile
+						1. **Implemented front end** enhancements and integrate updates into the design system through the development cycle
+						
+						</div>
+						<div class="col">
+							[brand guide screen shot?]
+						</div>
+						</div>
+					</textarea>
+				</section>
+						
+				<section data-markdown data-background-color="skyblue">
+					<textarea data-template>
+						
+						<div class="row">
+						<div class="col">
+							[ a couple of vertical slides for designs + revisions ]
+						</div>
+						<div class="col align-left">
+
+						<h1 class="r-fit-text">The Process</h1>
+
+						1. **Weekly domain expert meetings** We built strong trusting relationships with the clinical and business teams. We set up weekly deep dive calls about the clinical domain and functionality while validating designs as we progressed.
+						1. **Focus on usability issues** Since we had to be conservative with layout changes and technical risks, I decided to focus *redesign energy* on the primary patient information sections:
+							- Need more relevant patient patient information displayed
+							- Clarify ambiguity around report status
+							- Engage upsell of clinical consults
+						1. **Present and Iterate** design review sessions itegrating feedback from and protyping where necessary
+
+						</div>
+						</div>
+					</textarea>
+				</section>
+						
+				<section data-markdown data-background-color="#425362">
+					<textarea data-template>
+					
+					<h4 class="align-right">Results & Next Steps?</h4>
+					<div class="row">
+					<div class="col">
+					
+					# future enhancements				
+
+					</div>
+					<div class="col align-left">
+						
+					</div>
+					</div>
+				
+
+					</textarea>
+				</section>
+					<!--
+
+						<section data-markdown>
+							<textarea data-template>
+							<div class="row">
+								<div class="col r-fit-text align-left">
+									
+									# Challenges
+									
+									Counterintuitive workflow that resulted in a great deal of users (doctors, admins, and nurse practitioners) were not aware of their access to tools and resources to service their patients  
+									
+									- engagement and findability of crucial tools and information falls off after the patient list pages in the clinician portal
+							- Add an interactive scheduling component to the patient information
+							- added collapsing region that focused relevant and "active" genes
+							
+						</div>
+						<div class="col r-fit-text"></div>
+						</div>
+							</textarea>
+						</section>
+					-->
+
+				</section>
+					
+				</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				controlsLayout: "edges",
+				transition: "convex",
+				hash: true,
+				height: 1080,
+				width: 1920,
+				margin: 0.2,
+				parallaxBackgroundImage: '', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
+				// Parallax background size
+				parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px" - currently only pixels are supported (don't use % or auto)
+			 	parallaxBackgroundHorizontal: 200,
+				parallaxBackgroundVertical: 50,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

@@ -1,7 +1,7 @@
 {
-  "name": "reveal.js",
-  "version": "4.3.1",
-  "description": "The HTML Presentation Framework",
+  "name": "CS_clinicianportal",
+  "version": "1",
+  "description": "An HTML Presentation",
   "homepage": "https://revealjs.com",
   "subdomain": "revealjs",
   "main": "dist/reveal.js",
@@ -12,14 +12,9 @@
     "start": "gulp serve",
     "build": "gulp build"
   },
-  "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "https://hakim.se"
-  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "https://github.com/additiveinverse/CS_clinicianportal.git"
   },
   "engines": {
     "node": ">=10.0.0"
