@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>a genomind UI/UX case study</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			:root {
+				--b-primary: #5B7E95;
+				--b-primary-dark: #415365;
+				--b-secondary: #5B7E95;
+				--b-accent: #FFC629;
+				--b-evergreen: rgb(79, 134, 142);
+
+				--r-heading-color: var(var(--b-primary));
+			} 
+				
+			.b1 {
+				color: var(--r-heading-color)!important;
+			}
+
+			.b2 {
+				color: var(--b-primary)!important;
+			}
+
+			.b3 {
+				color: var(--b-accent-color)!important;
+			}
+
+
+			@media screen and ( min-width: 767px ) {
+			.row {
+					display: flex;
+					align-items: center;
+				}
+				.col {
+					min-width: 50%;
+					flex: 0 1 auto;
+				}
+				.mb-0 {
+				margin-bottom: 0!important;
+			}
+
+			.align-left {
+				text-align: left!important;
+			}
+
+			.align-right {
+				text-align: right!important;
+			}
+
+			}
+
+
+
+
+			</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background-color="var(--b-primary-dark)" data-background="./images/login__2022.jpg" data-background-opacity="0.15">
+					<!-- <img class="" width="500" data-src="./images/Logo.svg" /> -->
+					<h1>Clinician Portal</h1>
+					<h2 class="h3">Patient page redesign</h2>
+				</section>
+
+				<section data-markdown data-background-color="var(--b-primary-dark)" data-background-opacity="0.2">
+					<textarea data-template>
+
+					<div class="row justify-between">
+					<div class="col">
+						<img class="r-stretch" data-src="./images/rev_startingpoint.png" width="90%" />
+					</div>	
+					<div class="col align-left">
+						
+					<h1>Objectives</h1>
+
+					- **Increase overall usability** by providing new features which increase engagement 
+					- **Increase revenue** by adding consult scheduling integration and upselling
+					- **Integrate new product features** with an enhanced report card to reflect status
+
+					</div>
+					</div>
+
+					</textarea>
+				</section>
+				
+				<section data-markdown data-background-color="goldenrod">
+					<textarea data-template>
+						
+						<div class="row">
+						<div class="col align-left">
+							
+						<h1>My Role</h1>
+							
+						
+						1. **Product Discovery** <br/> consulted SME to understand personas, tasks and workflows
+						1. **Prototype Creation** <br/>
+						for desktop, tablet, and mobile leveraging design system
+						1. **Design Presentations**<br/> to gain consensus with stakeholders through mid-sprint design reviews 
+						1. **UI Implementation**<br/> integrate improvements to the product and design system
+						
+						</div>
+						</div>
+					</textarea>
+				</section>
+						
+				<section data-background-gradient="radial-gradient( var(--b-secondary), var( --b-primary-dark ))">
+					<div data-markdown>
+						<textarea data-template>
+							<h1>The Process & Results</h1>
+							
+							<div class="r-stretch">
+
+							* **Weekly SME meetings**<br/> Weekly deep dive calls about functionality with the customer service and sales stakeholders while validating designs as we progressed.
+							* **Focus on usability issues**<br/> Since we had to be conservative with layout changes and technical risks, all *redesign energy* focused on the information architecture and visual presentation.
+							* **Present and Iterate** design review sessions with rapid protyping where necessary 
+							
+							</div>
+							</textarea>
+						</div>
+					</section>
+
+						<section data-background-gradient="linear-gradient(to right, var(--b-primary-dark), var(--b-secondary))">
+							<div class="row">
+								<div class="col">
+									<h1 class="r-fit-text">Iteration 1: Through the gift shop</h1>
+									<p>Puts the focus on consult scheduling status and upselling by providing dynamic status and CTAs to scheduling screens. An exit through the gift shop approach.</p>
+									<br/>
+								</div>
+								<div class="col">
+									<img data-src="./images/rev_noconsults.png" width="85%" /><br/>
+									<img data-src="./images/rev_gift_wires.jpg" width="85%" />
+								</div>
+							</div>
+						</section>
+
+						<section data-background-gradient="linear-gradient(to right,  var(--b-secondary),  var(--b-evergreen))">
+							<div class="row">
+								<div class="col">
+									<h1 class="r-fit-text">Iteration 2: Pizza tracker-esque</h1>
+									<p>Improve clarity into testing process and test workflow. This approach demystifies the testing process and shows status as a single line item with an indicator for completion</p>
+								</div>
+								<div class="col">
+									<img class="r-stretch" src="./images/rev_pizzatracker_esque.png" width="85%"><br/>
+									<img class="r-stretch" src="./images/rev_pizzatracker_wires.jpg" width="85%">
+								</div>
+							</div>
+						</section>
+
+						<section data-background-gradient="linear-gradient(to right,  var(--b-evergreen),  var(--b-primary-dark))">
+						<div class="row">
+							<div class="col">
+								<h1 class="r-fit-text">Iteration 3: Big hero info</h1>
+								<p>Overall clarity improvement. Reduced the statuses to single line items rather than data points for most things. During design review this one had the most responses even though it was TWICE the information and a lot more screen real estate.</p>
+							
+							</div>
+							<div class="col">
+								<img class="r-stretch" data-src="./images/rev_bighero.png" width="85%"><br/>
+								<img class="r-stretch" data-src="./images/rev_bighero_wires.jpg" width="85%">
+							</div>
+						</section>
+	
+				<section data-background-color="#425362">
+				
+					<h2>Takeaways</h2>
+					<p>End users & stakeholders asked to have clearly emphasized and relevant data and a lot of it.</p>
+					<p>There's something to be said for breathable white space and clear information architecture.</p>
+					<p>I would have loved to have had more user data and research post deployment.</p>
+					<p>For a couple of weeks worth of design work the development process went pretty smoothly as most of the design artifacts were stubbed out in the code already.</p>
+				</section>
+					
+
+				<section data-visibility="hidden">
+					<textarea data-template>
+					<div class="row">
+						<div class="col r-fit-text align-left">
+							
+							# Challenges
+							
+							Counterintuitive workflow that resulted in a great deal of users (doctors, admins, and nurse practitioners) were not aware of their access to tools and resources to service their patients  
+							
+						- engagement and findability of crucial tools and information falls off after the patient list pages in the clinician portal
+						- Add an interactive scheduling component to the patient information
+						- added collapsing region that focused relevant and "active" genes
+					
+				</div>
+				<div class="col r-fit-text"></div>
+				</div>
+					</textarea>
+				</section>
+
+				
+				</section>
+					
+				</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				controlsLayout: "edges",
+				transition: "slide",
+				hash: true,
+				height: 1080,
+				width: 1920,
+				margin: 0.2,
+				parallaxBackgroundImage: '', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
+				// Parallax background size
+				parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px" - currently only pixels are supported (don't use % or auto)
+			 	parallaxBackgroundHorizontal: 200,
+				parallaxBackgroundVertical: 50,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
