@@ -282,7 +282,7 @@ gulp.task('package', gulp.series(() =>
         { base: './' }
     )
     .pipe(gulp.dest('./build'))
- .pipe(zip('reveal-js-presentation.zip')).pipe(gulp.dest('./build'))
+// .pipe(zip('reveal-js-presentation.zip')).pipe(gulp.dest('./build'))
 
 ))
 
